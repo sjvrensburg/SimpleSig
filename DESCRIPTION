@@ -1,0 +1,22 @@
+Package: SimpleSig
+Title: Fast Path Signature Computation for Time Series and Rough Path Analysis
+Version: 0.9.9
+Authors@R: 
+    person("Stéfan", "Janse van Rensburg", , "stefanj@mandala.ac.za", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0749-2277"))
+Description: Provides fast computation of path signatures for multivariate time series 
+    and paths. Path signatures are iterated integrals that uniquely characterize paths 
+    and are widely used in machine learning, quantitative finance, and time series 
+    analysis. The implementation uses Chen's identity for efficient computation and 
+    includes OpenMP parallelization for improved performance on multi-core systems.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+LinkingTo: 
+    Rcpp
+Imports: 
+    Rcpp
+SystemRequirements: C++14, GNU make, OpenMP
+URL: https://github.com/sjvrensburg/SimpleSig
+BugReports: https://github.com/sjvrensburg/SimpleSig/issues
